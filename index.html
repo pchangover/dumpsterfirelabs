@@ -10,11 +10,26 @@
 :root{--bg:#0f0f0f;--panel:#191919;--text:#f5f1ea;--muted:#bdb7ad;--accent:#ff6b1a;--accent2:#ff3d21;--line:rgba(255,255,255,.1)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 20% 0,rgba(255,107,26,.13),transparent 34%),radial-gradient(circle at 85% 15%,rgba(255,61,33,.09),transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .shell{width:min(1120px,calc(100% - 32px));margin:auto}.hero{min-height:78vh;display:grid;place-items:center;padding:42px 0 34px}
-.hero-card{width:100%;position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(31,31,31,.97),rgba(18,18,18,.97));border:1px solid var(--line);border-radius:30px;padding:clamp(32px,6vw,76px);box-shadow:0 24px 70px rgba(0,0,0,.35)}
+.hero-card {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(31,31,31,.97), rgba(18,18,18,.97));
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: clamp(32px, 6vw, 76px);
+  box-shadow: 0 24px 70px rgba(0,0,0,.35);
+}
 .glow{position:absolute;width:390px;height:390px;border-radius:50%;right:-165px;top:-185px;background:radial-gradient(circle,rgba(255,107,26,.27),rgba(255,61,33,.08) 45%,transparent 70%)}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--muted);font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px}
 .spark{width:9px;height:9px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 18px rgba(255,107,26,.65)}
-h1{margin:0;max-width:100%;font-size:clamp(2.8rem,7vw,6.2rem);line-height:.95;letter-spacing:-.05em}.accent{background:linear-gradient(100deg,#ff8a29,#ff4a24);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 {
+  margin: 0;
+  max-width: 100%;
+  font-size: clamp(2.8rem, 7vw, 6.2rem);
+  line-height: .95;
+  letter-spacing: -.05em;
+}
 .tagline{margin:30px 0 0;max-width:700px;color:#ddd7cf;font-size:clamp(1.08rem,2vw,1.35rem);line-height:1.65}
 .services,.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.pill{border:1px solid var(--line);background:rgba(255,255,255,.035);color:#d8d2c8;border-radius:999px;padding:10px 14px;font-size:.92rem}
 .actions{align-items:center;gap:14px;margin-top:40px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;border-radius:13px;background:linear-gradient(100deg,var(--accent),var(--accent2));color:#fff;font-weight:850;text-decoration:none;box-shadow:0 12px 30px rgba(255,75,30,.2)}
