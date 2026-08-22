@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dumpster Fire Labs — custom laser engraving, 3D printing, and small-batch fabrication." />
+  <meta name="theme-color" content="#121212" />
+  <title>Dumpster Fire Labs</title>
+  <style>
+    :root {
+      --bg: #101010;
+      --text: #f5f1ea;
+      --muted: #bdb7ad;
+      --accent: #ff6b1a;
+      --accent-2: #ff3d21;
+      --line: rgba(255,255,255,.10);
+      --shadow: 0 24px 70px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(255,107,26,.13), transparent 34%),
+        radial-gradient(circle at 85% 15%, rgba(255,61,33,.10), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+    .wrap { width: min(940px, 100%); }
+    .card {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(145deg, rgba(30,30,30,.96), rgba(20,20,20,.96));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: clamp(30px, 6vw, 72px);
+      box-shadow: var(--shadow);
+    }
+    .glow {
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      right: -150px;
+      top: -160px;
+      background: radial-gradient(circle, rgba(255,107,26,.26), rgba(255,61,33,.08) 45%, transparent 70%);
+      pointer-events: none;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+    .spark {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 18px rgba(255,107,26,.65);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(3rem, 8vw, 6.6rem);
+      line-height: .92;
+      letter-spacing: -.055em;
+      max-width: 760px;
+    }
+    .accent {
+      background: linear-gradient(100deg, #ff8a29, #ff4a24);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .tagline {
+      margin: 28px 0 0;
+      max-width: 650px;
+      color: #ded9d0;
+      font-size: clamp(1.08rem, 2.2vw, 1.35rem);
+      line-height: 1.6;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 30px;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      color: #d8d2c8;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: .92rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-top: 40px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 20px;
+      border-radius: 13px;
+      background: linear-gradient(100deg, var(--accent), var(--accent-2));
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(255,75,30,.20);
+      transition: transform .15s ease, filter .15s ease;
+    }
+    .button:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+    }
+    .email {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .95rem;
+    }
+    .email:hover { color: var(--text); }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      margin-top: 36px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: #86817a;
+      font-size: .82rem;
+    }
+    @media (max-width: 640px) {
+      body { padding: 16px; }
+      .card { border-radius: 22px; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="glow"></div>
+      <div class="eyebrow"><span class="spark"></span> Something useful is burning</div>
+      <h1>Dumpster Fire <span class="accent">Labs</span></h1>
+      <p class="tagline">
+        Custom laser engraving, 3D printing, and small-batch fabrication.
+        Built for people who want something a little less ordinary.
+      </p>
+      <div class="services" aria-label="Services">
+        <span class="pill">Laser Engraving</span>
+        <span class="pill">3D Printing</span>
+        <span class="pill">Custom Projects</span>
+      </div>
+      <div class="actions">
+        <a class="button" href="mailto:hello@dumpsterfirelabs.dev">Start a Project</a>
+        <a class="email" href="mailto:hello@dumpsterfirelabs.dev">hello@dumpsterfirelabs.dev</a>
+      </div>
+      <footer>
+        <span>Dumpster Fire Labs</span>
+        <span>Full site coming soon.</span>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
