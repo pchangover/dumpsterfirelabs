@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request a custom engraved or printed binder from Dumpster Fire Labs.">
+  <meta name="theme-color" content="#0b0b0c">
+  <title>Custom Binder Request | Dumpster Fire Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="wordmark" href="index.html" aria-label="Dumpster Fire Labs home"><span>Dumpster Fire</span> <strong>Labs</strong></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span><span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html#how-it-works">How to order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html" aria-current="page">Binder request</a>
+        <span class="nav-social-group" aria-label="Social media">
+          <a href="https://www.instagram.com/dumpsterfirelabs/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://fb.me/dumpsterfirelabs" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+          <a href="https://www.tiktok.com/@dumpster.fire.labs" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero order-hero shell">
+      <p class="eyebrow"><span class="spark" aria-hidden="true"></span> Custom binder request</p>
+      <h1>Tell us what you want to <span class="accent">make.</span></h1>
+      <p>Share as much as you know. “I’m not sure” is a perfectly good answer—we’ll help with the rest.</p>
+      <div class="form-assurances" aria-label="What happens next">
+        <span>About 5 minutes</span><span>No payment today</span><span>Artwork approval before production</span>
+      </div>
+    </section>
+
+    <section class="form-layout shell">
+      <form class="order-form" id="binder-order-form" action="https://formsubmit.co/orders@dumpsterfirelabs.dev" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New custom binder request">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://dumpsterfirelabs.dev/thanks.html">
+        <input type="hidden" name="_autoresponse" value="Thanks for sending your custom binder request to Dumpster Fire Labs. We received it and will follow up by email to discuss the artwork, quote, and timing. Nothing is charged or made until you approve the details.">
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <fieldset class="form-section">
+          <legend><span>01</span> About you</legend>
+          <div class="field-grid two-col">
+            <label>
+              <span>Name <b aria-hidden="true">*</b></span>
+              <input type="text" name="Name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>Email <b aria-hidden="true">*</b></span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              <span>Phone <small>Optional</small></span>
+              <input type="tel" name="Phone" autocomplete="tel">
+            </label>
+            <label>
+              <span>Social handle <small>Optional</small></span>
+              <input type="text" name="Social handle" placeholder="Platform and @yourname">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend><span>02</span> The binder</legend>
+          <div class="field-grid two-col">
+            <label>
+              <span>Binder size <b aria-hidden="true">*</b></span>
+              <select name="Binder size" required>
+                <option value="" selected disabled>Choose a size</option>
+                <option>4-pocket</option>
+                <option>9-pocket</option>
+                <option>12-pocket XL</option>
+                <option>I’m not sure</option>
+              </select>
+            </label>
+            <label>
+              <span>Who supplies it? <b aria-hidden="true">*</b></span>
+              <select name="Binder supplier" required>
+                <option value="" selected disabled>Choose an option</option>
+                <option>Dumpster Fire Labs purchases it</option>
+                <option>I’ll provide my own binder</option>
+                <option>I’m not sure</option>
+              </select>
+            </label>
+            <label>
+              <span>Preferred color <small>Optional</small></span>
+              <input type="text" name="Binder color" placeholder="Black, blue, red…">
+            </label>
+            <label>
+              <span>Brand or model <small>If providing your own</small></span>
+              <input type="text" name="Binder brand or model" placeholder="Vault X, TopDeck, other…">
+            </label>
+          </div>
+
+          <div class="field-group">
+            <span class="field-label">Where should the artwork go? <b aria-hidden="true">*</b></span>
+            <p class="field-help">Choose every area you’re considering. We can narrow it down together.</p>
+            <div class="choice-grid">
+              <label class="choice-card"><input class="placement-input" type="checkbox" name="Front cover artwork" value="Yes"><span><strong>Front cover</strong><small>Main artwork on the front</small></span></label>
+              <label class="choice-card"><input class="placement-input" type="checkbox" name="Small rear character" value="Yes"><span><strong>Small rear character</strong><small>A smaller accent on the back</small></span></label>
+              <label class="choice-card"><input class="placement-input" type="checkbox" name="Full back cover artwork" value="Yes"><span><strong>Full back cover</strong><small>Artwork across the entire back</small></span></label>
+              <label class="choice-card"><input class="placement-input" type="checkbox" name="Spine artwork" value="Yes"><span><strong>Spine</strong><small>Text or artwork on the spine</small></span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend><span>03</span> The artwork</legend>
+          <div class="field-grid two-col">
+            <label>
+              <span>Starting point <b aria-hidden="true">*</b></span>
+              <select name="Artwork starting point" required>
+                <option value="" selected disabled>Choose the closest match</option>
+                <option>I have artwork ready to adapt</option>
+                <option>I have reference images or a style in mind</option>
+                <option>I only have an idea or description</option>
+                <option>I want something from the existing gallery</option>
+                <option>I’m not sure</option>
+              </select>
+            </label>
+            <label>
+              <span>Production style <b aria-hidden="true">*</b></span>
+              <select name="Production style" required>
+                <option value="" selected disabled>Choose a style</option>
+                <option>Controlled grayscale laser engraving</option>
+                <option>Bold black-and-white laser engraving</option>
+                <option>Full-color UV printing — coming October</option>
+                <option>I want your recommendation</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="full-field">
+            <span>Describe the design <b aria-hidden="true">*</b></span>
+            <textarea name="Design description" rows="7" required placeholder="Who or what should be included? What pose, scene, words, colors, or small details matter? Tell us what absolutely must be present—and anything you want us to avoid."></textarea>
+          </label>
+
+          <div class="upload-field">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path></svg>
+            <strong>Attach reference images</strong>
+            <span>Up to three JPG, PNG, WEBP, or PDF files. 10 MB total maximum.</span>
+            <div class="file-pickers">
+              <label class="file-button">Choose file 1<input class="reference-image-input" type="file" name="attachment" accept="image/jpeg,image/png,image/webp,application/pdf"></label>
+              <label class="file-button">Choose file 2<input class="reference-image-input" type="file" name="attachment-2" accept="image/jpeg,image/png,image/webp,application/pdf"></label>
+              <label class="file-button">Choose file 3<input class="reference-image-input" type="file" name="attachment-3" accept="image/jpeg,image/png,image/webp,application/pdf"></label>
+            </div>
+            <span class="file-list" id="file-list" aria-live="polite">No files selected</span>
+          </div>
+          <p class="form-error" id="file-error" role="alert" hidden></p>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend><span>04</span> Timing & notes</legend>
+          <div class="field-grid two-col">
+            <label>
+              <span>Need-by date <small>Optional</small></span>
+              <input type="date" name="Need-by date">
+            </label>
+            <label>
+              <span>How did you find us? <small>Optional</small></span>
+              <select name="Referral source">
+                <option value="">Choose one</option>
+                <option>Instagram</option>
+                <option>Facebook</option>
+                <option>TikTok</option>
+                <option>Card show or event</option>
+                <option>Friend or family</option>
+                <option>Existing customer</option>
+                <option>Web search</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+          <label class="full-field">
+            <span>Anything else? <small>Optional</small></span>
+            <textarea name="Additional notes" rows="4" placeholder="Budget questions, gift details, special requests, or anything else we should know."></textarea>
+          </label>
+        </fieldset>
+
+        <div class="submit-panel">
+          <label class="confirm-row">
+            <input type="checkbox" name="Quote request confirmation" value="Confirmed" required>
+            <span>I understand this is a quote request. Nothing will be charged or made until I approve the details.</span>
+          </label>
+          <button class="button submit-button" type="submit">Send binder request <span aria-hidden="true">→</span></button>
+          <p>Uploads are used only to understand and prepare your custom project.</p>
+        </div>
+      </form>
+
+      <aside class="form-sidebar">
+        <div class="sidebar-card">
+          <p class="kicker">What happens next</p>
+          <ol>
+            <li><span>1</span><p><strong>We review your request.</strong> If anything is unclear, we’ll email you.</p></li>
+            <li><span>2</span><p><strong>You get a quote.</strong> Final pricing depends on the binder, artwork, and coverage.</p></li>
+            <li><span>3</span><p><strong>You approve the design.</strong> Production only starts after the artwork and price are approved.</p></li>
+          </ol>
+        </div>
+        <div class="sidebar-card sidebar-photo">
+          <img src="images/work-09.webp" alt="Detailed engraved character collage on a rose-colored binder" loading="lazy" decoding="async">
+          <p>Not sure how to describe it? Reference images help. Rough sketches and screenshots are welcome.</p>
+        </div>
+        <div class="sidebar-card contact-card">
+          <p class="kicker">Prefer email?</p>
+          <p>Send general project questions to</p>
+          <a href="mailto:hello@dumpsterfirelabs.dev">hello@dumpsterfirelabs.dev</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div><a class="wordmark" href="index.html"><span>Dumpster Fire</span> <strong>Labs</strong></a><p>Custom engraving, printing & fabrication.</p></div>
+      <nav aria-label="Footer navigation"><a href="index.html#how-it-works">How to order</a><a href="gallery.html">Gallery</a><a href="order.html">Binder request</a></nav>
+      <div class="footer-contact"><a href="mailto:hello@dumpsterfirelabs.dev">hello@dumpsterfirelabs.dev</a><a href="https://www.instagram.com/dumpsterfirelabs/" target="_blank" rel="noopener noreferrer">Instagram · @dumpsterfirelabs</a><a href="https://fb.me/dumpsterfirelabs" target="_blank" rel="noopener noreferrer">Facebook · Dumpster Fire Labs</a><a href="https://www.tiktok.com/@dumpster.fire.labs" target="_blank" rel="noopener noreferrer">TikTok · @dumpster.fire.labs</a></div>
+    </div>
+    <div class="shell footer-bottom"><span>© <span data-current-year>2026</span> Dumpster Fire Labs</span><span>Made in Maryland</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

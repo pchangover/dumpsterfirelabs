@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse custom engraved binders and recent work from Dumpster Fire Labs.">
+  <meta name="theme-color" content="#0b0b0c">
+  <title>Gallery | Dumpster Fire Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="wordmark" href="index.html" aria-label="Dumpster Fire Labs home"><span>Dumpster Fire</span> <strong>Labs</strong></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span><span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html#how-it-works">How to order</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="order.html">Binder request</a>
+        <span class="nav-social-group" aria-label="Social media">
+          <a href="https://www.instagram.com/dumpsterfirelabs/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://fb.me/dumpsterfirelabs" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+          <a href="https://www.tiktok.com/@dumpster.fire.labs" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero shell">
+      <p class="eyebrow"><span class="spark" aria-hidden="true"></span> The growing pile</p>
+      <h1>Made in the <span class="accent">lab.</span></h1>
+      <p>Finished projects, close-up details, and proof that a plain binder doesn’t have to stay plain. Select any photo for a closer look.</p>
+    </section>
+
+    <section class="gallery-section shell">
+      <div class="filter-bar" role="group" aria-label="Filter gallery">
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All work <span>10</span></button>
+        <button class="filter-button" type="button" data-filter="cover" aria-pressed="false">Full covers <span>5</span></button>
+        <button class="filter-button" type="button" data-filter="detail" aria-pressed="false">Character details <span>5</span></button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <figure class="gallery-card tall" data-category="cover" id="graveyard-binder">
+          <button class="image-button" type="button" data-lightbox="images/work-07.webp" data-caption="Graveyard scene — full-cover laser engraving">
+            <img src="images/work-07.webp" alt="Purple binder with a full engraved graveyard scene and characters" loading="eager" decoding="async">
+            <span class="zoom-hint">View larger</span>
+          </button>
+          <figcaption><strong>Graveyard scene</strong><span>Full-cover laser engraving</span></figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="detail">
+          <button class="image-button" type="button" data-lightbox="images/work-01.webp" data-caption="Wartortle — single-character laser engraving">
+            <img src="images/work-01.webp" alt="Light gray binder engraved with a Wartortle character" loading="eager" decoding="async">
+            <span class="zoom-hint">View larger</span>
+          </button>
+          <figcaption><strong>Wartortle</strong><span>Single-character engraving</span></figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="detail">
+          <button class="image-button" type="button" data-lightbox="images/work-02.webp" data-caption="Squirtle — single-character laser engraving">
+            <img src="images/work-02.webp" alt="Light gray binder engraved with a waving Squirtle character" loading="lazy" decoding="async">
+            <span class="zoom-hint">View larger</span>
+          </button>
+          <figcaption><strong>Squirtle</strong><span>Single-character engraving</span></figcaption>
+        </figure>
+
+        <figure class="gallery-card tall" data-category="cover" id="water-binder">
+          <button class="image-button" type="button" data-lightbox="images/work-03.webp" data-caption="Water evolution scene — multi-character full cover">
+            <img src="images/work-03.webp" alt="Gray binder engraved with a multi-character underwater evolution scene" loading="lazy" decoding="async">
+            <span class="zoom-hint">View larger</span>
+          </button>
+          <figcaption><strong>Water evolution scene</strong><span>Multi-character full cover</span></figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="detail">
+          <button class="image-button" type="button" data-lightbox="images/work-04.webp" data-caption="Wartortle — rear cover character detail">
+            <img src="images/work-04.webp" alt="Back of gray binder with a small Wartortle engraving" loading="lazy" decoding="async">
+            <span class="zoom-hint">View larger</span>
+          </button>
+          <figcaption><strong>Wartortle detail</strong><span>Rear cover character</span></figcaption>
+        </figure>
+
+        <figure class="gallery-card tall" data-category="cover" id="red-binder">
+          <button class="image-button" type="button" data-lightbox="images/work-05.webp" data-caption="Charizard — character cover on red">
+            <img src="images/work-05.webp" alt="Red binder with an engraved Charizard character" loading="lazy" decoding="async">
+            <span class="zoom-hint">View larger</span>
+          </button>
+          <figcaption><strong>Charizard</strong><span>Character cover on red</span></figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="detail">
+          <button class="image-button" type="button" data-lightbox="images/work-06.webp" data-caption="Pokédex — rear cover detail">
+            <img src="images/work-06.webp" alt="Back of red binder with a small engraved Pokédex design" loading="lazy" decoding="async">
+            <span class="zoom-hint">View larger</span>
+          </button>
+          <figcaption><strong>Pokédex detail</strong><span>Rear cover engraving</span></figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="detail">
+          <button class="image-button" type="button" data-lightbox="images/work-08.webp" data-caption="Gengar — rear cover character detail">
+            <img src="images/work-08.webp" alt="Back of purple binder with a small engraved Gengar character" loading="lazy" decoding="async">
+            <span class="zoom-hint">View larger</span>
+          </button>
+          <figcaption><strong>Gengar detail</strong><span>Rear cover character</span></figcaption>
+        </figure>
+
+        <figure class="gallery-card tall" data-category="cover">
+          <button class="image-button" type="button" data-lightbox="images/work-09.webp" data-caption="Classic character collage — full-cover laser engraving">
+            <img src="images/work-09.webp" alt="Rose-colored binder engraved with a detailed classic character collage" loading="lazy" decoding="async">
+            <span class="zoom-hint">View larger</span>
+          </button>
+          <figcaption><strong>Classic character collage</strong><span>Full-cover engraving</span></figcaption>
+        </figure>
+
+        <figure class="gallery-card tall" data-category="cover">
+          <button class="image-button" type="button" data-lightbox="images/work-10.webp" data-caption="Pikachu — minimalist character layout">
+            <img src="images/work-10.webp" alt="Pink binder with a small engraved Pikachu character near the corner" loading="lazy" decoding="async">
+            <span class="zoom-hint">View larger</span>
+          </button>
+          <figcaption><strong>Pikachu</strong><span>Minimal character layout</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="gallery-cta shell">
+      <div>
+        <p class="eyebrow"><span class="spark" aria-hidden="true"></span> Make the next one yours</p>
+        <h2>Have an idea for a binder?</h2>
+        <p>Send the details and a few reference images. We’ll help turn the idea into something that works on the actual material.</p>
+      </div>
+      <a class="button" href="order.html">Request a custom binder <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Enlarged gallery image">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <img alt="">
+    <p></p>
+  </dialog>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div><a class="wordmark" href="index.html"><span>Dumpster Fire</span> <strong>Labs</strong></a><p>Custom engraving, printing & fabrication.</p></div>
+      <nav aria-label="Footer navigation"><a href="index.html#how-it-works">How to order</a><a href="gallery.html">Gallery</a><a href="order.html">Binder request</a></nav>
+      <div class="footer-contact"><a href="mailto:hello@dumpsterfirelabs.dev">hello@dumpsterfirelabs.dev</a><a href="https://www.instagram.com/dumpsterfirelabs/" target="_blank" rel="noopener noreferrer">Instagram · @dumpsterfirelabs</a><a href="https://fb.me/dumpsterfirelabs" target="_blank" rel="noopener noreferrer">Facebook · Dumpster Fire Labs</a><a href="https://www.tiktok.com/@dumpster.fire.labs" target="_blank" rel="noopener noreferrer">TikTok · @dumpster.fire.labs</a></div>
+    </div>
+    <div class="shell footer-bottom"><span>© <span data-current-year>2026</span> Dumpster Fire Labs</span><span>Made in Maryland</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
