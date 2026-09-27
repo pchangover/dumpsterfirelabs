@@ -290,6 +290,121 @@
       color: var(--text);
     }
 
+
+    /* -------------------------
+       Quick navigation
+    ------------------------- */
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 22px 0 0;
+    }
+
+    .nav-brand {
+      color: var(--text);
+      font-weight: 900;
+      letter-spacing: -0.025em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav-brand span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 38px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.025);
+      color: #d9d3cb;
+      font-size: .86rem;
+      font-weight: 750;
+      text-decoration: none;
+      transition: .15s ease;
+    }
+
+    .nav-link:hover {
+      color: #fff;
+      border-color: rgba(255,107,26,.48);
+      background: rgba(255,107,26,.07);
+      transform: translateY(-1px);
+    }
+
+    .nav-link.quote-link {
+      border-color: rgba(255,107,26,.42);
+      color: #ffd7bc;
+      background: rgba(255,107,26,.07);
+    }
+
+    .button-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 20px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 13px;
+      background: rgba(255,255,255,.035);
+      color: var(--text);
+      font-weight: 800;
+      text-decoration: none;
+      transition: .15s ease;
+    }
+
+    .button-outline:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255,107,26,.5);
+      background: rgba(255,107,26,.07);
+    }
+
+    .hero-helper {
+      margin-top: 14px;
+      color: #938c84;
+      font-size: .8rem;
+      line-height: 1.45;
+    }
+
+    .hero-helper strong {
+      color: #cfc8bf;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #9a938b;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+    }
+
     /* -------------------------
        Recent Work
     ------------------------- */
@@ -428,6 +543,26 @@
     ------------------------- */
 
     @media (max-width: 720px) {
+
+      .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 16px;
+      }
+
+      .nav-links {
+        width: 100%;
+      }
+
+      .nav-link {
+        flex: 1 1 auto;
+        justify-content: center;
+      }
+
+      .cta-actions {
+        justify-content: flex-start;
+      }
+
       h1 {
         font-size: clamp(2.75rem, 11vw, 4.5rem);
         letter-spacing: -0.04em;
@@ -465,6 +600,22 @@
 <body>
   <div class="shell">
 
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-brand" href="/">Dumpster Fire <span>Labs</span></a>
+
+      <div class="nav-links">
+        <a class="nav-link quote-link" href="/quote_builder/">
+          Binder Quote Builder
+        </a>
+        <a class="nav-link" href="https://www.instagram.com/dumpsterfirelabs/" target="_blank" rel="noopener">
+          Instagram
+        </a>
+        <a class="nav-link" href="https://www.facebook.com/dumpsterfirelabs" target="_blank" rel="noopener">
+          Facebook
+        </a>
+      </div>
+    </nav>
+
     <!-- Hero -->
     <section class="hero">
       <div class="hero-card">
@@ -494,9 +645,16 @@
         <div class="actions">
           <a
             class="button"
+            href="/quote_builder/"
+          >
+            Build a Binder Quote
+          </a>
+
+          <a
+            class="button-outline"
             href="mailto:hello@dumpsterfirelabs.dev"
           >
-            Start a Project
+            Start a Custom Project
           </a>
 
           <a
@@ -505,6 +663,11 @@
           >
             See Recent Work ↓
           </a>
+        </div>
+
+        <div class="hero-helper">
+          <strong>Not sure what a custom binder costs?</strong>
+          The quote builder shows binder, engraving, artwork, spine, and shipping estimates before you contact us.
         </div>
 
       </div>
@@ -540,7 +703,7 @@
 
         <figure class="shot">
           <img
-            src="images/work-01.webp"
+            src="https://dumpsterfirelabs.dev/images/work-01.webp"
             alt="Custom laser engraved binder artwork"
             loading="lazy"
             decoding="async"
@@ -549,7 +712,7 @@
 
         <figure class="shot">
           <img
-            src="images/work-02.webp"
+            src="https://dumpsterfirelabs.dev/images/work-02.webp"
             alt="Custom laser engraved binder artwork"
             loading="lazy"
             decoding="async"
@@ -558,7 +721,7 @@
 
         <figure class="shot">
           <img
-            src="images/work-03.webp"
+            src="https://dumpsterfirelabs.dev/images/work-03.webp"
             alt="Custom laser engraved binder artwork"
             loading="lazy"
             decoding="async"
@@ -567,7 +730,7 @@
 
         <figure class="shot">
           <img
-            src="images/work-04.webp"
+            src="https://dumpsterfirelabs.dev/images/work-04.webp"
             alt="Custom laser engraved binder artwork"
             loading="lazy"
             decoding="async"
@@ -576,7 +739,7 @@
 
         <figure class="shot">
           <img
-            src="images/work-05.webp"
+            src="https://dumpsterfirelabs.dev/images/work-05.webp"
             alt="Custom laser engraved binder artwork"
             loading="lazy"
             decoding="async"
@@ -585,7 +748,7 @@
 
         <figure class="shot">
           <img
-            src="images/work-06.webp"
+            src="https://dumpsterfirelabs.dev/images/work-06.webp"
             alt="Custom laser engraved binder artwork"
             loading="lazy"
             decoding="async"
@@ -594,7 +757,7 @@
 
         <figure class="shot">
           <img
-            src="images/work-07.webp"
+            src="https://dumpsterfirelabs.dev/images/work-07.webp"
             alt="Custom laser engraved binder artwork"
             loading="lazy"
             decoding="async"
@@ -603,7 +766,7 @@
 
         <figure class="shot">
           <img
-            src="images/work-08.webp"
+            src="https://dumpsterfirelabs.dev/images/work-08.webp"
             alt="Custom laser engraved binder artwork"
             loading="lazy"
             decoding="async"
@@ -612,7 +775,7 @@
 
         <figure class="shot">
           <img
-            src="images/work-09.webp"
+            src="https://dumpsterfirelabs.dev/images/work-09.webp"
             alt="Custom laser engraved binder artwork"
             loading="lazy"
             decoding="async"
@@ -621,7 +784,7 @@
 
         <figure class="shot">
           <img
-            src="images/work-10.webp"
+            src="https://dumpsterfirelabs.dev/images/work-10.webp"
             alt="Custom laser engraved binder artwork"
             loading="lazy"
             decoding="async"
@@ -636,20 +799,29 @@
 
       <div>
         <h3>
-          Have something weird in mind?
+          Ready to build something?
         </h3>
 
         <p>
-          Custom ideas, one-offs, and small runs are welcome.
+          Price out a custom binder instantly, or contact us for other custom work.
         </p>
       </div>
 
-      <a
-        class="button"
-        href="mailto:hello@dumpsterfirelabs.dev"
-      >
-        hello@dumpsterfirelabs.dev
-      </a>
+      <div class="cta-actions">
+        <a
+          class="button"
+          href="/quote_builder/"
+        >
+          Build a Binder Quote
+        </a>
+
+        <a
+          class="button-outline"
+          href="mailto:hello@dumpsterfirelabs.dev"
+        >
+          Email Us
+        </a>
+      </div>
 
     </section>
 
@@ -659,9 +831,11 @@
         Dumpster Fire Labs
       </span>
 
-      <span>
-        Laser engraving • 3D printing • Custom fabrication
-      </span>
+      <div class="footer-links">
+        <a href="/quote_builder/">Binder Quote Builder</a>
+        <a href="https://www.instagram.com/dumpsterfirelabs/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/dumpsterfirelabs" target="_blank" rel="noopener">Facebook</a>
+      </div>
     </footer>
 
   </div>
