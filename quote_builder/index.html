@@ -311,7 +311,7 @@ $('#builder').addEventListener('submit',async(e)=>{
     }
 
     status.className='form-status show success';
-    status.innerHTML=`<strong>Quote request sent!</strong><br>Thanks, ${escapeHtml($('#customerName').value.trim())}. We’ll review the details and contact you at ${escapeHtml($('#customerEmail').value.trim())}.`;
+    status.textContent=`Quote request sent! Thanks, ${$('#customerName').value.trim()}. We’ll review the details and contact you at ${$('#customerEmail').value.trim()}.`;
     submit.textContent='Quote Request Sent';
     submit.disabled=true;
   }catch(err){
