@@ -22,11 +22,11 @@ h1{margin:12px 0 10px;font-size:clamp(2.5rem,7vw,5.6rem);line-height:.95;letter-
 .stephead{display:flex;gap:14px;align-items:flex-start;margin-bottom:19px}.num{flex:0 0 38px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111}.step h2{font-size:1.35rem;margin:2px 0 4px;letter-spacing:-.02em}.sub{margin:0;color:var(--muted);font-size:.93rem;line-height:1.5}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.choice{position:relative;display:block;min-height:116px;border:1px solid var(--line);border-radius:17px;background:var(--soft);padding:16px;cursor:pointer;transition:.18s ease;overflow:hidden}.choice:hover{border-color:rgba(255,107,26,.45);transform:translateY(-1px)}.choice input{position:absolute;opacity:0;pointer-events:none}.choice.selected{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset,0 12px 30px rgba(255,82,25,.10);background:linear-gradient(145deg,rgba(255,107,26,.12),rgba(255,61,33,.04))}.choice strong{display:block;font-size:1rem;margin-bottom:5px}.choice small{display:block;color:var(--muted);line-height:1.45}.size-choice strong{font-size:1.32rem;letter-spacing:-.02em;margin-bottom:7px}.size-price{display:block;margin-top:2px;color:var(--muted);font-size:.875rem;font-weight:400;line-height:1.45}.tag{display:inline-flex;margin-top:10px;padding:5px 9px;border:1px solid rgba(255,255,255,.12);border-radius:999px;color:#eee3d8;font-size:.75rem;font-weight:800}.save{color:#ffc298}.unavailable{opacity:.42;cursor:not-allowed}.unavailable:hover{transform:none;border-color:var(--line)}
 .package{min-height:275px}.package-preview{height:160px;display:flex;gap:14px;align-items:center;justify-content:center;margin:-2px 0 16px}.binder{height:145px;width:102px;border:2px solid rgba(255,255,255,.26);border-radius:9px;position:relative;background:#111;box-shadow:inset 0 0 0 6px rgba(255,255,255,.025)}.binder:before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:5px;border-radius:4px;background:rgba(255,255,255,.10)}.binder.back:before{left:auto;right:8px}.art-full{position:absolute;left:18px;right:10px;top:12px;bottom:12px;border:2px solid var(--accent);border-radius:6px;background:linear-gradient(145deg,rgba(255,107,26,.34),rgba(255,61,33,.10))}.binder.back .art-full{left:10px;right:18px}.art-small{position:absolute;width:42px;height:50px;left:18px;bottom:12px;border:2px solid var(--accent);border-radius:48% 48% 42% 42%;background:rgba(255,107,26,.20)}.binder.back .art-small{left:auto;right:18px}.arrow{color:#716a64;font-size:1.25rem}.price{margin-top:12px;color:#fff;font-weight:900;font-size:1.08rem}
-.fields{display:grid;grid-template-columns:1.3fr .7fr;gap:12px;margin-top:16px}label.field{display:block;color:var(--muted);font-size:.84rem;font-weight:750}textarea,input[type=text]{width:100%;margin-top:8px;border:1px solid var(--line);border-radius:13px;background:#101010;color:var(--text);padding:13px 14px;font:inherit;outline:none}textarea{min-height:130px;resize:vertical}textarea:focus,input[type=text]:focus{border-color:rgba(255,107,26,.75);box-shadow:0 0 0 3px rgba(255,107,26,.08)}.upload-wrap{display:block;margin-top:12px;padding:12px 13px;border:1px dashed rgba(255,255,255,.16);border-radius:12px;background:rgba(255,255,255,.025)}.upload-label{display:block;color:#e9e2da;font-size:.82rem;font-weight:850;margin-bottom:8px}.upload-wrap input[type=file]{display:block;width:100%;color:var(--muted);font:inherit;font-size:.8rem}.upload-wrap input[type=file]::file-selector-button{margin-right:10px;border:1px solid rgba(255,255,255,.13);border-radius:9px;padding:8px 11px;background:#272727;color:var(--text);font:inherit;font-weight:800;cursor:pointer}.upload-note{display:block;margin-top:8px;color:#8f8881;font-size:.75rem;line-height:1.4}
+.fields{display:grid;grid-template-columns:1.3fr .7fr;gap:12px;margin-top:16px}label.field{display:block;color:var(--muted);font-size:.84rem;font-weight:750}textarea,input[type=text],input[type=email],input[type=tel]{width:100%;margin-top:8px;border:1px solid var(--line);border-radius:13px;background:#101010;color:var(--text);padding:13px 14px;font:inherit;outline:none}textarea{min-height:130px;resize:vertical}textarea:focus,input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus{border-color:rgba(255,107,26,.75);box-shadow:0 0 0 3px rgba(255,107,26,.08)}.upload-wrap{display:block;margin-top:12px;padding:12px 13px;border:1px dashed rgba(255,255,255,.16);border-radius:12px;background:rgba(255,255,255,.025)}.upload-label{display:block;color:#e9e2da;font-size:.82rem;font-weight:850;margin-bottom:8px}.upload-wrap input[type=file]{display:block;width:100%;color:var(--muted);font:inherit;font-size:.8rem}.upload-wrap input[type=file]::file-selector-button{margin-right:10px;border:1px solid rgba(255,255,255,.13);border-radius:9px;padding:8px 11px;background:#272727;color:var(--text);font:inherit;font-weight:800;cursor:pointer}.upload-note{display:block;margin-top:8px;color:#8f8881;font-size:.75rem;line-height:1.4}
 .addons{display:grid;gap:10px}.check{display:flex;align-items:center;gap:13px;border:1px solid var(--line);border-radius:15px;padding:14px 15px;background:var(--soft);cursor:pointer}.check .examples-btn{margin-top:0;flex:0 0 auto}.check input{width:18px;height:18px;accent-color:var(--accent)}.checktext{flex:1}.checktext strong{display:block}.checktext span{display:block;color:var(--muted);font-size:.84rem;margin-top:3px}.amount{font-weight:900;color:#ffe0cd}.spine-demo{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:7px 9px;border:1px solid rgba(255,255,255,.09);border-radius:11px;background:#111}.spine-shell{position:relative;width:24px;height:66px;border:2px solid rgba(255,255,255,.25);border-radius:6px;background:#0d0d0d}.spine-art{position:absolute;inset:5px 6px;border-radius:3px;background:linear-gradient(180deg,rgba(255,107,26,.35),rgba(255,61,33,.12));border:1px solid var(--accent)}.spine-label{color:var(--muted);font-size:.7rem;font-weight:800;line-height:1.15;text-transform:uppercase;letter-spacing:.08em}
-.total{background:linear-gradient(145deg,rgba(32,24,20,.99),rgba(20,20,20,.99));border-color:rgba(255,107,26,.38)}.totaltop{display:flex;align-items:end;justify-content:space-between;gap:20px;padding-bottom:20px;border-bottom:1px solid var(--line)}.total-label{color:var(--muted);text-transform:uppercase;font-weight:850;letter-spacing:.14em;font-size:.74rem}.total-price{font-size:clamp(2.8rem,7vw,5rem);line-height:.9;font-weight:950;letter-spacing:-.055em;background:linear-gradient(100deg,#ff9a56,#ff4b25);-webkit-background-clip:text;background-clip:text;color:transparent}.tier{margin-top:8px;color:#d9d1c8;font-size:.91rem}.breakdown{display:grid;gap:0;margin-top:12px}.row{display:flex;justify-content:space-between;gap:18px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07);color:#ddd6ce}.row:last-child{border-bottom:0}.row span:last-child{text-align:right;color:#fff;font-weight:800}.note{margin:15px 0 0;color:#9f9890;font-size:.82rem;line-height:1.55}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.btn{appearance:none;border:0;border-radius:12px;padding:12px 16px;font:inherit;font-weight:850;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.primary{background:linear-gradient(100deg,var(--accent),var(--accent2));color:#111}.secondary{background:#252525;border:1px solid var(--line);color:var(--text)}
+.total{background:linear-gradient(145deg,rgba(32,24,20,.99),rgba(20,20,20,.99));border-color:rgba(255,107,26,.38)}.totaltop{display:flex;align-items:end;justify-content:space-between;gap:20px;padding-bottom:20px;border-bottom:1px solid var(--line)}.total-label{color:var(--muted);text-transform:uppercase;font-weight:850;letter-spacing:.14em;font-size:.74rem}.total-price{font-size:clamp(2.8rem,7vw,5rem);line-height:.9;font-weight:950;letter-spacing:-.055em;background:linear-gradient(100deg,#ff9a56,#ff4b25);-webkit-background-clip:text;background-clip:text;color:transparent}.tier{margin-top:8px;color:#d9d1c8;font-size:.91rem}.breakdown{display:grid;gap:0;margin-top:12px}.row{display:flex;justify-content:space-between;gap:18px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07);color:#ddd6ce}.row:last-child{border-bottom:0}.row span:last-child{text-align:right;color:#fff;font-weight:800}.note{margin:15px 0 0;color:#9f9890;font-size:.82rem;line-height:1.55}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.btn{appearance:none;border:0;border-radius:12px;padding:12px 16px;font:inherit;font-weight:850;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.primary{background:linear-gradient(100deg,var(--accent),var(--accent2));color:#111}.secondary{background:#252525;border:1px solid var(--line);color:var(--text)}.contact-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.contact-fields .wide{grid-column:1/-1}.required{color:#ffab78}.contact-method{display:flex;gap:10px;flex-wrap:wrap;margin-top:9px}.method-option{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--line);border-radius:11px;background:#111;color:#ddd6ce;font-size:.84rem;font-weight:750;cursor:pointer}.method-option input{accent-color:var(--accent)}.submit-note{margin:10px 0 0;color:#8f8881;font-size:.78rem;line-height:1.5}.form-status{display:none;margin-top:16px;padding:14px 15px;border-radius:13px;border:1px solid rgba(255,107,26,.38);background:rgba(255,107,26,.08);color:#f3e7de;line-height:1.5;font-size:.88rem}.form-status.show{display:block}.form-status.success{border-color:rgba(87,197,126,.38);background:rgba(87,197,126,.08);color:#dff4e5}.form-status.error{border-color:rgba(255,94,94,.42);background:rgba(255,94,94,.08);color:#ffdada}.btn[disabled]{opacity:.55;cursor:wait}.mock-badge{display:inline-flex;margin-left:8px;padding:3px 7px;border-radius:999px;border:1px solid rgba(255,255,255,.12);color:#aaa29a;font-size:.66rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;vertical-align:middle}
 footer{padding:30px 4px 88px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#827c75;font-size:.8rem}.examples-btn{margin-top:12px;appearance:none;border:1px solid rgba(255,107,26,.42);border-radius:10px;background:rgba(255,107,26,.08);color:#ffd7bc;padding:8px 11px;font:inherit;font-size:.78rem;font-weight:850;cursor:pointer}.examples-btn:hover{background:rgba(255,107,26,.14);border-color:rgba(255,107,26,.7)}.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}.modal.open{display:flex}.modal-card{width:min(900px,100%);max-height:min(760px,90vh);overflow:auto;border:1px solid rgba(255,107,26,.34);border-radius:22px;background:linear-gradient(145deg,#1c1c1c,#121212);box-shadow:0 28px 80px rgba(0,0,0,.6)}.modal-head{position:sticky;top:0;z-index:2;display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:20px 22px 16px;background:rgba(24,24,24,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.modal-head h3{margin:0;font-size:1.25rem}.modal-head p{margin:5px 0 0;color:var(--muted);font-size:.84rem}.modal-close{appearance:none;border:1px solid var(--line);background:#242424;color:#fff;width:36px;height:36px;border-radius:10px;font-size:1.25rem;cursor:pointer}.example-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:20px}.example-gallery.full-example{grid-template-columns:1fr}.example-gallery.full-example .example-card.image-card .example-visual{height:min(620px,68vh)}.example-card{border:1px solid var(--line);border-radius:16px;background:#111;padding:14px}.example-visual{height:210px;display:flex;align-items:center;justify-content:center;gap:10px;border-radius:12px;background:radial-gradient(circle at 50% 40%,rgba(255,107,26,.09),transparent 55%),#0c0c0c}.example-card.image-card .example-visual{height:420px;padding:0;overflow:hidden;background:#0c0c0c}.example-card.image-card.wide-example{grid-column:1/-1}.example-card.image-card.wide-example .example-visual{height:min(620px,68vh)}.example-card.image-card img{width:100%;height:100%;display:block;object-fit:contain;background:#0c0c0c}.example-card strong{display:block;margin-top:10px;font-size:.9rem}.example-card span{display:block;margin-top:3px;color:var(--muted);font-size:.76rem;line-height:1.35}.mini-binder{height:150px;width:96px;border:2px solid rgba(255,255,255,.25);border-radius:9px;position:relative;background:#111}.mini-binder:before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:4px;border-radius:3px;background:rgba(255,255,255,.12)}.mini-binder.back:before{left:auto;right:7px}.mini-full{position:absolute;left:17px;right:9px;top:12px;bottom:12px;border:2px solid var(--accent);border-radius:6px;background:linear-gradient(145deg,rgba(255,107,26,.26),rgba(255,61,33,.07))}.mini-binder.back .mini-full{left:9px;right:17px}.mini-char{position:absolute;width:38px;height:48px;right:17px;bottom:13px;border:2px solid var(--accent);border-radius:48% 48% 42% 42%;background:rgba(255,107,26,.16)}.mini-spine{height:150px;width:34px;border:2px solid rgba(255,255,255,.25);border-radius:8px;position:relative;background:#111;box-shadow:inset 0 0 0 5px rgba(255,255,255,.025)}.mini-spine:after{content:"";position:absolute;inset:12px 8px;border:2px solid var(--accent);border-radius:4px;background:linear-gradient(180deg,rgba(255,107,26,.26),rgba(255,61,33,.07))}.mini-spine.text:before{content:"DFL";position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-90deg);color:#ffb37e;font-size:.65rem;font-weight:900;letter-spacing:.12em}.mini-spine.icon:before{content:"✦";position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);color:#ffb37e;font-size:1.25rem}.mini-plus{color:#6f6962;font-weight:900}.floating-subtotal{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:50;width:min(760px,calc(100% - 28px));display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 16px;border:1px solid rgba(255,107,26,.42);border-radius:16px;background:rgba(20,20,20,.94);box-shadow:0 16px 40px rgba(0,0,0,.45);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}.floating-subtotal .float-copy{display:flex;align-items:baseline;gap:10px;min-width:0}.floating-subtotal .float-label{font-size:.74rem;color:var(--muted);font-weight:850;letter-spacing:.11em;text-transform:uppercase}.floating-subtotal .float-note{font-size:.78rem;color:#8e877f;white-space:nowrap}.floating-subtotal .float-price{font-size:1.65rem;font-weight:950;letter-spacing:-.04em;color:#fff;white-space:nowrap}
-@media(max-width:760px){.grid,.grid.two,.fields{grid-template-columns:1fr}.package{min-height:auto}.totaltop{align-items:flex-start;flex-direction:column}.package-preview{height:145px}.shell{width:min(100% - 18px,1050px)}.step{border-radius:18px}.choice{min-height:105px}.spine-demo{display:none}.floating-subtotal{bottom:9px;width:calc(100% - 18px);padding:10px 12px}.floating-subtotal .float-copy{display:block}.floating-subtotal .float-note{display:block;margin-top:2px;white-space:normal}.floating-subtotal .float-price{font-size:1.45rem}.example-gallery{grid-template-columns:1fr}.example-visual{height:180px}.modal{padding:10px}.modal-card{max-height:92vh}}
+@media(max-width:760px){.grid,.grid.two,.fields,.contact-fields{grid-template-columns:1fr}.contact-fields .wide{grid-column:auto}.package{min-height:auto}.totaltop{align-items:flex-start;flex-direction:column}.package-preview{height:145px}.shell{width:min(100% - 18px,1050px)}.step{border-radius:18px}.choice{min-height:105px}.spine-demo{display:none}.floating-subtotal{bottom:9px;width:calc(100% - 18px);padding:10px 12px}.floating-subtotal .float-copy{display:block}.floating-subtotal .float-note{display:block;margin-top:2px;white-space:normal}.floating-subtotal .float-price{font-size:1.45rem}.example-gallery{grid-template-columns:1fr}.example-visual{height:180px}.modal{padding:10px}.modal-card{max-height:92vh}}
 </style>
 </head>
 <body>
@@ -37,7 +37,7 @@ footer{padding:30px 4px 88px;display:flex;justify-content:space-between;gap:14px
     <p class="lead">Build your engraved binder. Choose the binder, coverage, and artwork you want. You’ll get a clear planning estimate before reaching out.</p>
   </header>
 
-  <form class="builder" id="builder">
+  <form class="builder" id="builder" action="https://formspree.io/f/xaenpzge" method="POST" enctype="multipart/form-data">
     <section class="step">
       <div class="stephead"><div class="num">1</div><div><h2>Choose a binder size</h2><p class="sub">Pocket count refers to pockets per page.</p></div></div>
       <div class="grid" id="sizeChoices">
@@ -82,7 +82,7 @@ footer{padding:30px 4px 88px;display:flex;justify-content:space-between;gap:14px
           <textarea id="design" placeholder="Describe the characters, theme, mood, text, or specific ideas you want included — or attach an image of inspiration art below."></textarea>
           <span class="upload-wrap">
             <span class="upload-label">Attach inspiration art</span>
-            <input id="inspiration" type="file" accept="image/*">
+            <input id="inspiration" name="inspiration" type="file" accept="image/*">
             <span class="upload-note" id="uploadNote">JPG, PNG, WEBP, HEIC, or another image format.</span>
           </span>
         </label>
@@ -100,6 +100,29 @@ footer{padding:30px 4px 88px;display:flex;justify-content:space-between;gap:14px
       </label>
     </section>
 
+    <section class="step" id="contact">
+      <div class="stephead"><div class="num">6</div><div><h2>Your contact information</h2><p class="sub">Send the quote request directly from this page. No email app required.</p></div></div>
+      <div class="contact-fields">
+        <label class="field">Name <span class="required">*</span>
+          <input id="customerName" name="name" type="text" autocomplete="name" required placeholder="Your name">
+        </label>
+        <label class="field">Email <span class="required">*</span>
+          <input id="customerEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+        </label>
+        <label class="field">Phone
+          <input id="customerPhone" name="phone" type="tel" autocomplete="tel" placeholder="Optional">
+        </label>
+        <div class="field">
+          Preferred contact method
+          <div class="contact-method">
+            <label class="method-option"><input type="radio" name="contactMethod" value="Email" checked> Email</label>
+            <label class="method-option"><input type="radio" name="contactMethod" value="Text"> Text</label>
+          </div>
+        </div>
+      </div>
+      <p class="submit-note">Submitting sends these details, your complete binder configuration, the price estimate, and your inspiration image directly to Dumpster Fire Labs.</p>
+    </section>
+
     <section class="step total" id="estimate">
       <div class="totaltop">
         <div><div class="total-label">Estimated total</div><div class="tier" id="tierText">Small engraving tier · 160 cards</div></div>
@@ -107,7 +130,8 @@ footer{padding:30px 4px 88px;display:flex;justify-content:space-between;gap:14px
       </div>
       <div class="breakdown" id="breakdown"></div>
       <p class="note">This is a planning estimate, not a final invoice. Binder availability, unusual materials, artwork complexity, shipping destination, and special requests may change the final quote.</p>
-      <div class="actions"><button type="button" class="btn primary" id="askBtn">Ask about this build</button><button type="button" class="btn secondary" id="copyBtn">Copy quote summary ⧉</button></div>
+      <div class="actions"><button type="submit" class="btn primary" id="submitBtn">Submit Quote Request</button><button type="button" class="btn secondary" id="copyBtn">Copy Quote Summary ⧉</button></div>
+      <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
     </section>
   </form>
 
@@ -200,13 +224,103 @@ $$('input[name=size]').forEach(i=>i.addEventListener('change',()=>{renderBinders
 $$('input[name=package],input[name=art],#spine').forEach(i=>i.addEventListener('change',update));
 function summary(){
   const binder=getBinder(),packName=packageNames[selected('package')];
-  const lines=[`Dumpster Fire Labs binder quote`,`${selected('size')}-pocket · ${binder.name} · ${binder.capacity}`,packName,'DFL provides binder',selected('art')==='custom'?'Custom Artwork: $15':'Custom Artwork: $0 (DFL library)'];
+  const lines=[`Dumpster Fire Labs binder quote`];
+  if($('#customerName').value.trim())lines.push(`Customer: ${$('#customerName').value.trim()}`);
+  if($('#customerEmail').value.trim())lines.push(`Email: ${$('#customerEmail').value.trim()}`);
+  if($('#customerPhone').value.trim())lines.push(`Phone: ${$('#customerPhone').value.trim()}`);
+  lines.push(`Preferred contact: ${selected('contactMethod') || 'Email'}`);
+  lines.push('',`${selected('size')}-pocket · ${binder.name} · ${binder.capacity}`,packName,'DFL provides binder',selected('art')==='custom'?'Custom Artwork: $15':'Custom Artwork: $0 (DFL library)');
   if($('#spine').checked)lines.push('Engraved spine'); lines.push('Estimated shipping: $20');
   if($('#color').value.trim())lines.push(`Binder color: ${$('#color').value.trim()}`); if($('#design').value.trim())lines.push(`Design: ${$('#design').value.trim()}`); const inspiration=$('#inspiration').files[0]; if(inspiration)lines.push(`Inspiration image selected: ${inspiration.name}`); if($('#special').value.trim())lines.push(`Special requests: ${$('#special').value.trim()}`); lines.push(`Estimated total: ${$('#totalPrice').textContent}`); return lines.join('\n');
 }
 $('#copyBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(summary());$('#copyBtn').textContent='Copied ✓';setTimeout(()=>$('#copyBtn').textContent='Copy quote summary ⧉',1300)}catch(e){alert(summary())}});
 $('#inspiration').addEventListener('change',()=>{const f=$('#inspiration').files[0];$('#uploadNote').textContent=f?`Selected: ${f.name}`:'JPG, PNG, WEBP, HEIC, or another image format.'});
-$('#askBtn').addEventListener('click',()=>{location.href='mailto:orders@dumpsterfirelabs.dev?subject='+encodeURIComponent('Binder quote request')+'&body='+encodeURIComponent(summary())});
+$('#builder').addEventListener('input',()=>{
+  const submit=$('#submitBtn');
+  if(submit.textContent==='Quote Request Sent'){
+    submit.disabled=false;
+    submit.textContent='Submit Quote Request';
+    $('#formStatus').className='form-status';
+    $('#formStatus').textContent='';
+  }
+});
+// Formspree endpoint will be inserted here before this version is published.
+const FORM_ENDPOINT='https://formspree.io/f/xaenpzge';
+
+$('#builder').addEventListener('submit',async(e)=>{
+  e.preventDefault();
+  const form=e.currentTarget;
+  const status=$('#formStatus');
+  const submit=$('#submitBtn');
+
+  if(!form.reportValidity()) return;
+
+  if(selected('contactMethod')==='Text' && !$('#customerPhone').value.trim()){
+    status.className='form-status show error';
+    status.textContent='Please enter a phone number if you prefer to be contacted by text.';
+    $('#customerPhone').focus();
+    return;
+  }
+
+  submit.disabled=true;
+  submit.textContent='Submitting…';
+  status.className='form-status show';
+  status.textContent='Preparing your quote request…';
+
+  const data=new FormData();
+  const binder=getBinder();
+  const packageKey=selected('package');
+  const artworkKey=selected('art');
+
+  data.append('name',$('#customerName').value.trim());
+  data.append('email',$('#customerEmail').value.trim());
+  data.append('phone',$('#customerPhone').value.trim());
+  data.append('preferred_contact',selected('contactMethod') || 'Email');
+  data.append('binder_size',`${selected('size')}-pocket`);
+  data.append('binder_type',binder.name);
+  data.append('card_capacity',binder.capacity);
+  data.append('engraving_package',packageNames[packageKey]);
+  data.append('spine_engraving',$('#spine').checked ? 'Yes' : 'No');
+  data.append('artwork',artworkKey==='custom' ? 'Custom Artwork ($15)' : 'DFL Design Library ($0)');
+  data.append('binder_color',$('#color').value.trim());
+  data.append('design_request',$('#design').value.trim());
+  data.append('special_requests',$('#special').value.trim());
+  data.append('estimated_total',$('#totalPrice').textContent);
+  data.append('quote_summary',summary());
+  data.append('_subject',`Binder Quote Request — ${$('#customerName').value.trim()}`);
+
+  const inspiration=$('#inspiration').files[0];
+  if(inspiration)data.append('inspiration',inspiration);
+
+  try{
+    const response=await fetch(FORM_ENDPOINT,{
+      method:'POST',
+      body:data,
+      headers:{'Accept':'application/json'}
+    });
+
+    if(!response.ok){
+      let message='We could not send the quote request.';
+      try{
+        const result=await response.json();
+        if(result && Array.isArray(result.errors) && result.errors.length){
+          message=result.errors.map(error=>error.message).filter(Boolean).join(' ');
+        }
+      }catch(_){}
+      throw new Error(message);
+    }
+
+    status.className='form-status show success';
+    status.innerHTML=`<strong>Quote request sent!</strong><br>Thanks, ${escapeHtml($('#customerName').value.trim())}. We’ll review the details and contact you at ${escapeHtml($('#customerEmail').value.trim())}.`;
+    submit.textContent='Quote Request Sent';
+    submit.disabled=true;
+  }catch(err){
+    status.className='form-status show error';
+    status.textContent=(err && err.message ? err.message + ' ' : '') + 'Please try again or contact orders@dumpsterfirelabs.dev.';
+    submit.disabled=false;
+    submit.textContent='Submit Quote Request';
+  }
+});
 const exampleSets={
   character:{
     title:'Full Front & Rear Character',
